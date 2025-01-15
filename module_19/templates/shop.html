@@ -1,0 +1,13 @@
+{% extends 'menu.html' %}
+
+{% block pagename %}<h1> Машина времени </h1> {% endblock %}
+
+{% block menu %} {{ block.super }} {% endblock %}
+
+{% block content %}
+{% for elem in text %}
+<ul>
+    <li> {{ elem }} <button>выполнить</button></li>
+</ul>
+{% endfor %}
+{% endblock %}
